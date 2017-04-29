@@ -39,6 +39,8 @@ When Postgres is installed on a Linux machine, it is often configured by default
 
 In particular, many Postgres setups on Linux require passwords for all database connections over TCP. This will either need to be disabled, or passwords will have to be configured for the role used during the workshop exercises.
 
+If your system is setup for peer authentication, you will have to remove the password, host, and port keys from the json configuration below. The table would have been created under your system user account instead of event_source.
+
 ### Clone this Repository
 
 This is the repository that we'll be working with through the course the workshop.
